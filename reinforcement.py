@@ -53,4 +53,24 @@ ing on Python’s comprehension syntax and the built-in sum function.
 def facto_square_2(n):
     return sum([k*k for k in range(n)])
 
-print(facto_square_2(3))
+
+"""
+R-1.6 Write a short Python function that takes a positive integer n and returns
+the sum of the squares of all the odd positive integers smaller than n.
+"""
+def sum_odd_sqaures(n):
+    acc = 0
+    for i in range(n):
+        if i % 2 != 0:
+            acc += i**2
+    return acc
+
+
+"""
+R-1.7 Give a single command that computes the sum from Exercise R-1.4, rely
+ing on Python’s comprehension syntax and the built-in sum function.
+"""
+def sum_odd_squares_2(n):
+    return sum([k*k for k in range(n) if k % 2 != 0])
+
+print(sum_odd_squares_2(5))
