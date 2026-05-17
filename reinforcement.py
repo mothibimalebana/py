@@ -44,6 +44,13 @@ def facto_square(n):
     for i in range(n):
         m += i**2
     return m
-        
 
-print(facto_square(3))
+
+"""
+R-1.5 Give a single command that computes the sum from Exercise R-1.4, rely
+ing on Python’s comprehension syntax and the built-in sum function.
+"""
+def facto_square_2(n):
+    return sum([k*k for k in range(n)])
+
+print(facto_square_2(3))
