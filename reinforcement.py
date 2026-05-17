@@ -33,3 +33,17 @@ def minmax(data):
         elif data[i] < l:
             l = data[i]
     return (l, u)
+
+
+"""
+R-1.4 Write a short Python function that takes a positive integer n and returns
+the sum of the squares of all the positive integers smaller than n.
+"""
+def facto_square(n):
+    m = 0
+    for i in range(n):
+        m += i**2
+    return m
+        
+
+print(facto_square(3))
