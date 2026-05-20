@@ -74,3 +74,24 @@ def sum_odd_squares_2(n):
     return sum([k*k for k in range(n) if k % 2 != 0])
 
 print(sum_odd_squares_2(5))
+
+
+"""
+R-1.9 What parameters should be sent to the range constructor, to produce a
+range with values 50, 60, 70, 80?
+"""
+range(50, 80, 10)
+
+
+"""
+R-1.10 What parameters should be sent to the range constructor, to produce a
+range with values 8, 6, 4, 2, 0, −2, −4, −6, −8?
+"""
+range(8, -8, -2)
+
+"""
+R-1.11 Demonstrate how to use Python’s list comprehension syntax to produce
+the list [1, 2, 4, 8, 16, 32, 64, 128, 256].
+"""
+fibo = [2**k for k in range(9)]
+
